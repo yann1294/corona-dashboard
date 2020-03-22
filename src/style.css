@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.header img  {*/
+/*    float: left;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: #555555;*/
+/*}*/
+
+
+.header h1 {
+    position: relative;
+    padding-bottom: 1em;
+    top: 18px;
+    left: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.footer{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    background-image: url("./chart.png");
+    height: 100vh;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown{
+    padding: 0.5em;
+    margin: 1em 0;
+   /* font-size: 1.2em; */
+}
+
+
+.flex{
+    min-height: 66vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    margin: 1em 0;
+    padding: 0.5em;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.box.confirmed{
+
+    padding: 0.5em 0.5em;
+    border: 1px solid #b71c1c;
+    background: #c62828;
+}
+.box.recovered{
+
+    padding: 0.5em 0.5em;
+    border: 1px solid #43a047;
+    background: #4caf50;
+}
+.box.deaths{
+
+    padding: 0.5em 0.5em;
+    border: 1px solid #ffca28;
+    background: #ffd54f;
+}
+
+@media screen and (min-width: 900px){
+
+    .flex{
+        flex-wrap: nowrap;
+    }
+
+    .box{
+        margin: 1em;
+        max-width: 300px;
+        line-height: 1.5;
+        font-size: 2em;
+    }
+}
